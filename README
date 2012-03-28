@@ -1,0 +1,7 @@
+This is a fuzzer that generates random SWF files. These files contain random data with a valid tag structure. For the time being, only the tag structure is indeed valid. This means that the swf header format is correct (though random). The tag headers are correct and the tag body is as long as the tag header says it is. Anything else is crap.
+
+You can use this to check your SWF parser for crashes.
+
+This is the result of a TDD workshop during a Uxebu hackweek :)
+
+Usage: var swf = new SwfFuzzer().getSwf();
